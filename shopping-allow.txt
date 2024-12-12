@@ -1,0 +1,10 @@
+! Title: Custom shopping AdGuard DNS Allow List
+! Description: General allow list for shopping and browsing
+! Last modified: 2024-12-11 10:51:11
+! Homepage: https://raw.githubusercontent.com/sirkirby/adguard-home/main/shopping-allow.txt
+
+@@||tmx.bestbuy.com^ # Added from Query Log
+@@||link.medium.com^ # Added from Query Log
+@@||sendgrid.revzilla.com^ # Added from Query Log
+@@||click.e.progressive.com^ # Added from Query Log
+@@||click.redditmail.com^

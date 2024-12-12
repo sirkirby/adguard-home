@@ -194,25 +194,17 @@
 @@||connectivitycheck.gstatic.com^ # Owned by Google. Used by mobiles devices to check internet connectivity. Also known as Network Connectivity Status Indicator-NCSI. - qjz9zk
 @@||connectivitycheck.android.com^ # Owned by Google. Used by mobiles devices to check internet connectivity. Also known as Network Connectivity Status Indicator-NCSI. - qjz9zk
 @@||www.msftconnecttest.com^ # Owned by Microsoft. Used by Windows systems to check internet connectivity. Also known as Network Connectivity Status Indicator-NCSI. - qjz9zk
-@@||click.redditmail.com^
 @@||saa.paramountplus.com^ # Added from Query Log
 @@||www.amazon.com^ # Added from Query Log
-@@||embed.acuityscheduling.com^ # Added from Query Log
 @@||cdn-marketing.acuityscheduling.com^ # Added from Query Log
 @@||gs-loc.apple.com^ # Added from Query Log
 @@||self.events.data.microsoft.com^ # Added from Query Log
-@@||link.medium.com^ # Added from Query Log
-@@||sendgrid.revzilla.com^ # Added from Query Log
-@@||click.e.progressive.com^ # Added from Query Log
 @@||vortex.hulu.com.akadns.net^ # Added from Query Log
 @@||assets.huluim.com^
 @@||doppler.hulu.com^ # Added from Query Log
-@@||tmx.bestbuy.com^ # Added from Query Log
-@@||stifx8nc9g.cloudflare-gateway.com^ # Added from Query Log
 @@||widget-mediator.zopim.com^ # Added from Query Log
 @@||cbsinteractive.data.adobedc.net^ # Added from Query Log
 @@||paramountplus.com.data.adobedc.net^ # Added from Query Log
-@@||cbsinteractive.hb.omtrdc.net^ # fucking paramount
-@@||tv.rlcdn.com^ # fucking paramount
+@@||cbsinteractive.hb.omtrdc.net^ # f$$king paramount
+@@||tv.rlcdn.com^ # f$$king paramount
 @@||googleads.g.doubleclick.net^
-@@||yogaphysics\.com^$ # alex yoga

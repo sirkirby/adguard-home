@@ -1,0 +1,7 @@
+! Title: Custom one-off AdGuard DNS Allow List
+! Description: General allow list for one-off sites
+! Last modified: 2024-12-11 10:51:11
+! Homepage: https://raw.githubusercontent.com/sirkirby/adguard-home/main/custom-allow.txt
+
+@@||yogaphysics\.com^$ # alex yoga
+@@||embed.acuityscheduling.com^ # Added from Query Log
