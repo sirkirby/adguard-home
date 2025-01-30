@@ -5,4 +5,4 @@
 
 @@||yogaphysics\.com^$ # alex yoga
 @@||embed.acuityscheduling.com^ # Added from Query Log
-@@||statsig.anthropic.com # claude refused to login without tracking
+@@||statsig.anthropic.com^ # claude refused to login without tracking
