@@ -1,47 +1,72 @@
 ! Title: Custom one-off AdGuard DNS Allow List
 ! Description: General allow list for one-off sites
-! Last modified: 2026-08-02 16:21:54
+! Last modified: 2026-08-02 16:46:05
 ! Homepage: https://raw.githubusercontent.com/sirkirby/adguard-home/main/custom-allow.txt
 
 ! Feature flags and remote configuration
 ! LaunchDarkly flag APIs; events.launchdarkly.com intentionally remains blockable.
-@@||clientsdk.launchdarkly.com^ # LaunchDarkly client flag polling
-@@||clientstream.launchdarkly.com^ # LaunchDarkly client flag streaming
-@@||sdk.launchdarkly.com^ # LaunchDarkly server flag polling
+! LaunchDarkly client flag polling
+||clientsdk.launchdarkly.com^
+! LaunchDarkly client flag streaming
+||clientstream.launchdarkly.com^
+! LaunchDarkly server flag polling
+||sdk.launchdarkly.com^
 
 ! Split flag delivery; events.split.io and telemetry.split.io intentionally remain blockable.
-@@||sdk.split.io^ # Split targeting rules
-@@||auth.split.io^ # Split streaming authentication
-@@||streaming.split.io^ # Split realtime flag updates
-@@||cdn.split.io^ # Split flag configuration CDN
+! Split targeting rules
+||sdk.split.io^
+! Split streaming authentication
+||auth.split.io^
+! Split realtime flag updates
+||streaming.split.io^
+! Split flag configuration CDN
+||cdn.split.io^
 
-@@||firebaseremoteconfig.googleapis.com^ # Firebase Remote Config
+! Firebase Remote Config
+||firebaseremoteconfig.googleapis.com^
 
 ! ConfigCat SDKs only download configuration; the management API and dashboard are not allowed here.
-@@||cdn.configcat.com^ # ConfigCat legacy/default config CDN
-@@||cdn-global.configcat.com^ # ConfigCat global config CDN
-@@||cdn-eu.configcat.com^ # ConfigCat EU config CDN
+! ConfigCat legacy/default config CDN
+||cdn.configcat.com^
+! ConfigCat global config CDN
+||cdn-global.configcat.com^
+! ConfigCat EU config CDN
+||cdn-eu.configcat.com^
 
-@@||config.ff.harness.io^ # Harness flag evaluations; events.ff.harness.io remains blockable
-@@||cdn.growthbook.io^ # GrowthBook feature configuration CDN
+! Harness flag evaluations; events.ff.harness.io remains blockable.
+||config.ff.harness.io^
+! GrowthBook feature configuration CDN
+||cdn.growthbook.io^
 
 ! DevCycle flag evaluation/config; events.devcycle.com intentionally remains blockable.
-@@||config-cdn.devcycle.com^ # DevCycle local-bucketing configuration
-@@||sdk-api.devcycle.com^ # DevCycle client SDK flag evaluation and updates
-@@||bucketing-api.devcycle.com^ # DevCycle cloud flag evaluation
+! DevCycle local-bucketing configuration
+||config-cdn.devcycle.com^
+! DevCycle client SDK flag evaluation and updates
+||sdk-api.devcycle.com^
+! DevCycle cloud flag evaluation
+||bucketing-api.devcycle.com^
 
 ! CloudBees Feature Management / Rollout legacy configuration endpoints.
 ! analytic.rollout.io, x-api.rollout.io, and Bugsnag intentionally remain blockable.
-@@||conf.rollout.io^ # CloudBees flag configuration
-@@||statestore.rollout.io^ # CloudBees flag state
-@@||push.rollout.io^ # CloudBees realtime configuration updates
+! CloudBees flag configuration
+||conf.rollout.io^
+! CloudBees flag state
+||statestore.rollout.io^
+! CloudBees realtime configuration updates
+||push.rollout.io^
 
 ! Optimizely configuration CDNs are already allowlisted in media-allow.txt.
 ! PostHog, Statsig, Flagsmith, Eppo, Unleash, and Kameleoon use mixed-use or deployment-specific hosts.
-@@||us.i.posthog.com^ # Wispr Flow flags; this host also carries PostHog telemetry
+! Wispr Flow flags; this host also carries PostHog telemetry.
+||us.i.posthog.com^
 
-@@||yogaphysics\.com  # yoga
-@@||embed.acuityscheduling.com^ # Added from Query Log
-@@||statsig.anthropic.com^ # claude refused to login without tracking
-@@||auth.openai.com^$important
-@@||stifx8nc9g.cloudflare-gateway.com^$important
+! Yoga
+||yogaphysics.com^
+! Added from Query Log
+||embed.acuityscheduling.com^
+! Claude refused to log in while this endpoint was blocked.
+||statsig.anthropic.com^
+! OpenAI authentication
+||auth.openai.com^$important
+! Cloudflare Gateway
+||stifx8nc9g.cloudflare-gateway.com^$important
